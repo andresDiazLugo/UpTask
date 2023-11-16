@@ -1,0 +1,18 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.login{
+    .upTask{
+       @include m.degradedHeader(v.$azul);
+       @include m.tablet{
+        font-size: 10rem;
+    }
+    }
+    input[type="submit"]{
+        @include m.boton(v.$azul,v.$blanco)
+    }
+    .actions{
+        a{
+            color:v.$azul;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.messageActivate{
+    .upTask{
+       @include m.degradedHeader(v.$rosa);
+       @include m.tablet{
+        font-size: 10rem;
+    }
+    }
+}

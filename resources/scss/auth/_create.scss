@@ -1,0 +1,18 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.create{
+    .upTask{
+        @include m.degradedHeader(v.$morado);
+        @include m.tablet{
+         font-size: 10rem;
+     }
+     }
+     input[type="submit"]{
+         @include m.boton(v.$morado,v.$blanco)
+     }
+     .actions{
+         a{
+             color:v.$morado;
+         }
+     }
+}

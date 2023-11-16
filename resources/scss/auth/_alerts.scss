@@ -1,0 +1,23 @@
+@use '../base/variables' as v;
+.container-alert{
+    ul{
+        text-align: center;
+        li{
+            margin: 1rem auto;
+            width: 50%;
+            background-color: red;
+            color: v.$blanco;
+        }
+    }
+}
+.container-alert-success{
+    ul{
+        text-align: center;
+        li{
+            margin: 1rem auto;
+            width: 50%;
+            background-color: green;
+            color: v.$blanco;
+        }
+    }
+}

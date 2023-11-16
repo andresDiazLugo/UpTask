@@ -1,0 +1,18 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.reset{
+    .upTask{
+       @include m.degradedHeader(v.$verde);
+       @include m.tablet{
+        font-size: 10rem;
+    }
+    }
+    input[type="submit"]{
+        @include m.boton(v.$verde,v.$blanco)
+    }
+    .actions{
+        a{
+            color:v.$verde;
+        }
+    }
+}

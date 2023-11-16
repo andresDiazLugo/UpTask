@@ -1,0 +1,17 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.confirm{
+    .upTask{
+        @include m.degradedHeader(v.$rojo);
+        @include m.tablet{
+         font-size: 10rem;
+     }
+     }
+     .actions{
+        display: flex;
+        justify-content: center;
+        a{
+            color:v.$rojo;
+        }
+     }
+}
